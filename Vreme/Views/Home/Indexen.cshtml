@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Start";
+    Layout = "~/Views/Shared/_EngLayout.cshtml";
 }
 
 <div class="row container-fluid">
@@ -9,40 +10,40 @@
         <div id="map" style="width:100%;height:400px;border:2px solid black;border-radius:2px;"></div>
     </div>
     <div class="col-sm-5">
-        <h2>Zadnji podatki</h2>
+        <h2>Recent data</h2>
         <table class="table table-hover" style="width:100%;background-color:rgba(255, 255, 255, 0.55);border:2px solid black;border-radius:2px">
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.IdPostaje)
+                    Station ID
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Cas)
+                    Time
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Temp)
+                    Temperature
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Vlaga)
+                    Humidity
                 </th>
             </tr>
 
             @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdPostaje)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cas)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Temp)°C
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Vlaga)%
-                </td>
-            </tr>
-        }
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdPostaje)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Temp)°C
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vlaga)%
+                    </td>
+                </tr>
+            }
 
         </table>
     </div>
@@ -54,7 +55,7 @@
                 <a href="http://www.meteo.si/met/sl/app/webmet/#webmet=vUHcs9WYkN3LtVGdl92LhBHcvcXZi1WZ09Cc1p2cvAncvd2LyVWYs12L3VWY0hWZy9SaulGdugXbsx3cs9mdl5Wah91c3xHf;">
                     <img src="~/Slike/arso.png" alt="ARSO" title="ARSO" />
                 </a>
-                Vremenska napoved - SLO
+                Weather forecast - SLO
             </div>
         </div>
         <div class="col-sm-4">
@@ -62,7 +63,7 @@
                 <a href="http://www.meteo.fvg.it/home.php">
                     <img src="~/Slike/arpa.png" alt="ARPA" title="ARPA" />
                 </a>
-                Vremenska napoved - Italija
+                Weather forecast - Italy
             </div>
         </div>
         <div class="col-sm-4">
@@ -70,7 +71,7 @@
                 <a href="https://www.meteoalarm.eu/sl_SI/0/0/SI-Slovenija.html">
                     <img src="~/Slike/alarm.png" alt="Meteoalarm" title="Meteoalarm" />
                 </a>
-                Meteoalarm - Slovenija
+                Meteoalarm - SLO
             </div>
         </div>
     </div>
@@ -96,15 +97,15 @@
 
         var marker1 = new google.maps.Marker({
             position: new google.maps.LatLng(45.952720, 13.668899),
-            
+
         });
         var marker2 = new google.maps.Marker({
             position: new google.maps.LatLng(45.949988, 13.650484),
-            
+
         });
         var marker3 = new google.maps.Marker({
             position: new google.maps.LatLng(45.953065, 13.636372),
-            
+
         });
 
         marker1.setMap(map);

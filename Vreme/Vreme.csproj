@@ -151,11 +151,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ArsoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PodatkiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Arso.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Models\Podatki.cs" />
     <Compile Include="Models\VremeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,6 +215,7 @@
     <Content Include="Slike\ukicon.png" />
     <Content Include="Slike\vikng.jpg" />
     <Content Include="Slike\vremebannerx.jpg" />
+    <Content Include="VremeARso.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -225,14 +229,17 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Indexen.cshtml" />
+    <Content Include="Views\Home\Indexit.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Podatki\Create.cshtml" />
     <Content Include="Views\Podatki\Delete.cshtml" />
     <Content Include="Views\Podatki\Details.cshtml" />
     <Content Include="Views\Podatki\Edit.cshtml" />
     <Content Include="Views\Podatki\Index.cshtml" />
+    <Content Include="Views\Arso\Index.cshtml" />
+    <Content Include="Views\Shared\_ItaLayout.cshtml" />
+    <Content Include="Views\Shared\_EngLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

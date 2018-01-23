@@ -22,18 +22,23 @@ namespace Vreme.Controllers
             return View(data);
         }
 
-        public ActionResult About()
+        public ActionResult Indexen()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            var data = from element in db1.Podatkis
+                       group element by element.IdPostaje
+                  into groups
+                       select groups.OrderByDescending(p => p.Cas).FirstOrDefault();
+            return View(data);
         }
 
-        public ActionResult Contact()
+        public ActionResult Indexit()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            var data = from element in db1.Podatkis
+                       group element by element.IdPostaje
+                  into groups
+                       select groups.OrderByDescending(p => p.Cas).FirstOrDefault();
+            return View(data);
         }
+        
     }
 }

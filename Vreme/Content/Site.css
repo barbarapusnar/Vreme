@@ -37,6 +37,7 @@ textarea {
     padding-top: 40px;
     transition: 0.5s;
     
+    
 }
 
     /* The navigation menu links */
@@ -46,7 +47,7 @@ textarea {
         font-size: 25px;
         display: block;
         transition: 0.5s;
-        color: white;
+        color:white;
     }
 
         /* When you mouse over the navigation links, change their color */
@@ -84,7 +85,7 @@ textarea {
             font-size: 14px;
         }
 
-}#navbtn1 {
+}.navbtnstil1 {
      border: none;
      background-color:#111;
      color:white;
@@ -93,7 +94,7 @@ textarea {
      vertical-align:middle;
      font-size: 16px;
  }
- #navbtn1:hover {
+ .navbtnstil1:hover {
      color: Highlight;
  }
 

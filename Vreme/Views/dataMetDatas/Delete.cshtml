@@ -1,0 +1,1224 @@
+﻿@model Vreme.Models.dataMetDatas
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>dataMetDatas</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_title)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_title)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_shortTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_shortTitle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_longTitle)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_longTitle)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_meteosiId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_meteosiId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_lat)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_lat)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_lon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_lon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.domain_altitude)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.domain_altitude)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dataSource_title)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dataSource_title)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.sunrise)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.sunrise)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.sunset)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.sunset)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsValid_issued)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsValid_issued)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsValid_issued_day)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsValid_issued_day)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsValid_issued_UTC)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsValid_issued_UTC)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsValid_issued_RFC822)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsValid_issued_RFC822)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsUpdated)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsUpdated)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsUpdated_day)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsUpdated_day)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsUpdated_UTC)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsUpdated_UTC)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tsUpdated_RFC822)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tsUpdated_RFC822)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.valid_day)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.valid_day)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.valid)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.valid)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.valid_UTC)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.valid_UTC)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.validStart)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.validStart)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.validEnd)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.validEnd)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nn_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nn_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.wwsyn_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.wwsyn_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.nn_iconwwsyn_icon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nn_iconwwsyn_icon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.wwsyn_icon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.wwsyn_icon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.td_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.td_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.td_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.td_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.td)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.td)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.td_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.td_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tx_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tx_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tx_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tx_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tx)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tx)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tx_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tx_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tn_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tn_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tn_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tn_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tn)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tn)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tn_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tn_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rh_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rh_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rh_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rh_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rh)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rh_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rh_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rhavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rhavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rhavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rhavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rhavg)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rhavg)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rhavg_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rhavg_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dd_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dd_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dd_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dd_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dd_shortText)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dd_shortText)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dd_icon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dd_icon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dd_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dd_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_shortText)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_shortText)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_longText)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_longText)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_icon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_icon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddavg_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddavg_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddmax_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddmax_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddmax_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddmax_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddmax_shortText)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddmax_shortText)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddmax_icon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddmax_icon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ddmax_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ddmax_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ff_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ff_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ff_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ff_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ff_val)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ff_val)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ff_val_kmh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ff_val_kmh)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ff_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ff_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffavg_val)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffavg_val)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffavg_val_kmh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffavg_val_kmh)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffavg_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffavg_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffmax_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffmax_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffmax_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffmax_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffmax_val)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffmax_val)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffmax_val_kmh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffmax_val_kmh)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ffmax_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ffmax_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.msl_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.msl_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.msl_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.msl_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.mslavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.mslavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.mslavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.mslavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.p_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.p_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.p_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.p_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.pavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.pavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.pavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rr_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rr_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rr_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rr_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rr_val)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rr_val)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rr_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rr_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.snow_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.snow_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.snow_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.snow_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_12h_acc_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_12h_acc_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_12h_acc_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_12h_acc_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_12h_acc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_12h_acc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_12h_acc_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_12h_acc_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_24h_acc_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_24h_acc_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_24h_acc_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_24h_acc_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_24h_acc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_24h_acc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tp_24h_acc_state)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tp_24h_acc_state)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tw_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tw_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tw_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tw_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.gSunRad_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.gSunRad_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.gSunRad_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.gSunRad_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.gSunRadavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.gSunRadavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.gSunRadavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.gSunRadavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.diffSunRad_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.diffSunRad_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.diffSunRad_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.diffSunRad_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.diffSunRadavg_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.diffSunRadavg_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.diffSunRadavg_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.diffSunRadavg_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.vis_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.vis_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.vis_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.vis_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t_5_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t_5_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.t_5_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.t_5_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg_5_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg_5_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tavg_5_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tavg_5_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_5_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_5_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_5_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_5_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_5_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_5_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_5_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_5_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_10_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_10_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_10_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_10_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_10_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_10_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_10_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_10_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_20_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_20_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_20_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_20_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_20_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_20_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_20_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_20_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_30_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_30_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_30_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_30_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_30_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_30_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_30_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_30_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_50_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_50_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tg_50_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tg_50_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_50_cm_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_50_cm_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tgavg_50_cm_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tgavg_50_cm_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.hhs_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.hhs_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.hhs_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.hhs_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ns_var_desc)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ns_var_desc)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ns_var_unit)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ns_var_unit)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.rrHh)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.rrHh)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>

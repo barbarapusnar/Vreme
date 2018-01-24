@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Arsodata.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="dataMetDatas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="domain_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="domain_shortTitle" Type="nvarchar" MaxLength="255" />
+          <Property Name="domain_longTitle" Type="nvarchar" MaxLength="255" />
+          <Property Name="domain_meteosiId" Type="nvarchar" MaxLength="255" />
+          <Property Name="domain_lat" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="domain_lon" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="domain_altitude" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dataSource_title" Type="nvarchar" MaxLength="255" />
+          <Property Name="sunrise" Type="nvarchar" MaxLength="255" />
+          <Property Name="sunset" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsValid_issued" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsValid_issued_day" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsValid_issued_UTC" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsValid_issued_RFC822" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsUpdated" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsUpdated_day" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsUpdated_UTC" Type="nvarchar" MaxLength="255" />
+          <Property Name="tsUpdated_RFC822" Type="nvarchar" MaxLength="255" />
+          <Property Name="valid_day" Type="nvarchar" MaxLength="255" />
+          <Property Name="valid" Type="nvarchar" MaxLength="255" />
+          <Property Name="valid_UTC" Type="nvarchar" MaxLength="255" />
+          <Property Name="validStart" Type="nvarchar" MaxLength="255" />
+          <Property Name="validEnd" Type="nvarchar" MaxLength="255" />
+          <Property Name="nn_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="wwsyn_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="nn_iconwwsyn_icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="wwsyn_icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="t_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="t_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="t" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="t_state" Type="tinyint" Nullable="false" />
+          <Property Name="td_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="td_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="td" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="td_state" Type="tinyint" Nullable="false" />
+          <Property Name="tavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tavg" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tavg_state" Type="tinyint" Nullable="false" />
+          <Property Name="tx_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tx_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tx" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tx_state" Type="tinyint" Nullable="false" />
+          <Property Name="tn_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tn_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tn" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tn_state" Type="tinyint" Nullable="false" />
+          <Property Name="rh_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="rh_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="rh" Type="tinyint" Nullable="false" />
+          <Property Name="rh_state" Type="tinyint" Nullable="false" />
+          <Property Name="rhavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="rhavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="rhavg" Type="tinyint" Nullable="false" />
+          <Property Name="rhavg_state" Type="tinyint" Nullable="false" />
+          <Property Name="dd_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="dd_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="dd_shortText" Type="nvarchar" MaxLength="255" />
+          <Property Name="dd_icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="dd_state" Type="tinyint" Nullable="false" />
+          <Property Name="ddavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddavg_shortText" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddavg_longText" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddavg_icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddavg_state" Type="tinyint" Nullable="false" />
+          <Property Name="ddmax_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddmax_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddmax_shortText" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddmax_icon" Type="nvarchar" MaxLength="255" />
+          <Property Name="ddmax_state" Type="tinyint" Nullable="false" />
+          <Property Name="ff_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ff_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ff_val" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ff_val_kmh" Type="tinyint" Nullable="false" />
+          <Property Name="ff_state" Type="tinyint" Nullable="false" />
+          <Property Name="ffavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ffavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ffavg_val" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ffavg_val_kmh" Type="tinyint" Nullable="false" />
+          <Property Name="ffavg_state" Type="tinyint" Nullable="false" />
+          <Property Name="ffmax_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ffmax_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ffmax_val" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ffmax_val_kmh" Type="tinyint" Nullable="false" />
+          <Property Name="ffmax_state" Type="tinyint" Nullable="false" />
+          <Property Name="msl_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="msl_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="mslavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="mslavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="p_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="p_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="pavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="pavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="rr_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="rr_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="rr_val" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="rr_state" Type="tinyint" Nullable="false" />
+          <Property Name="snow_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="snow_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_12h_acc_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_12h_acc_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_12h_acc" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tp_12h_acc_state" Type="tinyint" Nullable="false" />
+          <Property Name="tp_24h_acc_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_24h_acc_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_24h_acc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tp_24h_acc_state" Type="nvarchar" MaxLength="255" />
+          <Property Name="tw_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tw_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="gSunRad_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="gSunRad_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="gSunRadavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="gSunRadavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="diffSunRad_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="diffSunRad_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="diffSunRadavg_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="diffSunRadavg_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="vis_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="vis_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="t_5_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="t_5_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tavg_5_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tavg_5_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_5_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_5_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_5_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_5_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_10_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_10_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_10_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_10_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_20_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_20_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_20_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_20_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_30_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_30_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_30_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_30_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_50_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tg_50_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_50_cm_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="tgavg_50_cm_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="hhs_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="hhs_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="ns_var_desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="ns_var_unit" Type="nvarchar" MaxLength="255" />
+          <Property Name="rrHh" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ArsodataStoreContainer">
+          <EntitySet Name="dataMetDatas" EntityType="Self.dataMetDatas" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Arsodata" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="dataMetDatas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="domain_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="domain_shortTitle" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="domain_longTitle" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="domain_meteosiId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="domain_lat" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="domain_lon" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="domain_altitude" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="dataSource_title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="sunrise" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="sunset" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsValid_issued" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsValid_issued_day" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsValid_issued_UTC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsValid_issued_RFC822" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsUpdated" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsUpdated_day" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsUpdated_UTC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tsUpdated_RFC822" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="valid_day" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="valid" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="valid_UTC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="validStart" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="validEnd" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="nn_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="wwsyn_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="nn_iconwwsyn_icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="wwsyn_icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="t_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="t_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="t" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="t_state" Type="Byte" Nullable="false" />
+          <Property Name="td_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="td_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="td" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="td_state" Type="Byte" Nullable="false" />
+          <Property Name="tavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tavg" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tavg_state" Type="Byte" Nullable="false" />
+          <Property Name="tx_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tx_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tx" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tx_state" Type="Byte" Nullable="false" />
+          <Property Name="tn_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tn_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tn" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tn_state" Type="Byte" Nullable="false" />
+          <Property Name="rh_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rh_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rh" Type="Byte" Nullable="false" />
+          <Property Name="rh_state" Type="Byte" Nullable="false" />
+          <Property Name="rhavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rhavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rhavg" Type="Byte" Nullable="false" />
+          <Property Name="rhavg_state" Type="Byte" Nullable="false" />
+          <Property Name="dd_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dd_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dd_shortText" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dd_icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dd_state" Type="Byte" Nullable="false" />
+          <Property Name="ddavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddavg_shortText" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddavg_longText" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddavg_icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddavg_state" Type="Byte" Nullable="false" />
+          <Property Name="ddmax_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddmax_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddmax_shortText" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddmax_icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ddmax_state" Type="Byte" Nullable="false" />
+          <Property Name="ff_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ff_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ff_val" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ff_val_kmh" Type="Byte" Nullable="false" />
+          <Property Name="ff_state" Type="Byte" Nullable="false" />
+          <Property Name="ffavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ffavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ffavg_val" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ffavg_val_kmh" Type="Byte" Nullable="false" />
+          <Property Name="ffavg_state" Type="Byte" Nullable="false" />
+          <Property Name="ffmax_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ffmax_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ffmax_val" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="ffmax_val_kmh" Type="Byte" Nullable="false" />
+          <Property Name="ffmax_state" Type="Byte" Nullable="false" />
+          <Property Name="msl_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="msl_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="mslavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="mslavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="p_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="p_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="pavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="pavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rr_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rr_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rr_val" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="rr_state" Type="Byte" Nullable="false" />
+          <Property Name="snow_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="snow_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_12h_acc_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_12h_acc_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_12h_acc" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="tp_12h_acc_state" Type="Byte" Nullable="false" />
+          <Property Name="tp_24h_acc_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_24h_acc_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_24h_acc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tp_24h_acc_state" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tw_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tw_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="gSunRad_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="gSunRad_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="gSunRadavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="gSunRadavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="diffSunRad_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="diffSunRad_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="diffSunRadavg_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="diffSunRadavg_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="vis_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="vis_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="t_5_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="t_5_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tavg_5_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tavg_5_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_5_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_5_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_5_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_5_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_10_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_10_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_10_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_10_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_20_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_20_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_20_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_20_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_30_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_30_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_30_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_30_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_50_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tg_50_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_50_cm_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="tgavg_50_cm_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hhs_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hhs_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ns_var_desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ns_var_unit" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="rrHh" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ArsoSql" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="dataMetDatas" EntityType="Self.dataMetDatas" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ArsodataStoreContainer" CdmEntityContainer="ArsoSql">
+          <EntitySetMapping Name="dataMetDatas">
+            <EntityTypeMapping TypeName="Arsodata.dataMetDatas">
+              <MappingFragment StoreEntitySet="dataMetDatas">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="domain_title" ColumnName="domain_title" />
+                <ScalarProperty Name="domain_shortTitle" ColumnName="domain_shortTitle" />
+                <ScalarProperty Name="domain_longTitle" ColumnName="domain_longTitle" />
+                <ScalarProperty Name="domain_meteosiId" ColumnName="domain_meteosiId" />
+                <ScalarProperty Name="domain_lat" ColumnName="domain_lat" />
+                <ScalarProperty Name="domain_lon" ColumnName="domain_lon" />
+                <ScalarProperty Name="domain_altitude" ColumnName="domain_altitude" />
+                <ScalarProperty Name="dataSource_title" ColumnName="dataSource_title" />
+                <ScalarProperty Name="sunrise" ColumnName="sunrise" />
+                <ScalarProperty Name="sunset" ColumnName="sunset" />
+                <ScalarProperty Name="tsValid_issued" ColumnName="tsValid_issued" />
+                <ScalarProperty Name="tsValid_issued_day" ColumnName="tsValid_issued_day" />
+                <ScalarProperty Name="tsValid_issued_UTC" ColumnName="tsValid_issued_UTC" />
+                <ScalarProperty Name="tsValid_issued_RFC822" ColumnName="tsValid_issued_RFC822" />
+                <ScalarProperty Name="tsUpdated" ColumnName="tsUpdated" />
+                <ScalarProperty Name="tsUpdated_day" ColumnName="tsUpdated_day" />
+                <ScalarProperty Name="tsUpdated_UTC" ColumnName="tsUpdated_UTC" />
+                <ScalarProperty Name="tsUpdated_RFC822" ColumnName="tsUpdated_RFC822" />
+                <ScalarProperty Name="valid_day" ColumnName="valid_day" />
+                <ScalarProperty Name="valid" ColumnName="valid" />
+                <ScalarProperty Name="valid_UTC" ColumnName="valid_UTC" />
+                <ScalarProperty Name="validStart" ColumnName="validStart" />
+                <ScalarProperty Name="validEnd" ColumnName="validEnd" />
+                <ScalarProperty Name="nn_var_desc" ColumnName="nn_var_desc" />
+                <ScalarProperty Name="wwsyn_var_desc" ColumnName="wwsyn_var_desc" />
+                <ScalarProperty Name="nn_iconwwsyn_icon" ColumnName="nn_iconwwsyn_icon" />
+                <ScalarProperty Name="wwsyn_icon" ColumnName="wwsyn_icon" />
+                <ScalarProperty Name="t_var_desc" ColumnName="t_var_desc" />
+                <ScalarProperty Name="t_var_unit" ColumnName="t_var_unit" />
+                <ScalarProperty Name="t" ColumnName="t" />
+                <ScalarProperty Name="t_state" ColumnName="t_state" />
+                <ScalarProperty Name="td_var_desc" ColumnName="td_var_desc" />
+                <ScalarProperty Name="td_var_unit" ColumnName="td_var_unit" />
+                <ScalarProperty Name="td" ColumnName="td" />
+                <ScalarProperty Name="td_state" ColumnName="td_state" />
+                <ScalarProperty Name="tavg_var_desc" ColumnName="tavg_var_desc" />
+                <ScalarProperty Name="tavg_var_unit" ColumnName="tavg_var_unit" />
+                <ScalarProperty Name="tavg" ColumnName="tavg" />
+                <ScalarProperty Name="tavg_state" ColumnName="tavg_state" />
+                <ScalarProperty Name="tx_var_desc" ColumnName="tx_var_desc" />
+                <ScalarProperty Name="tx_var_unit" ColumnName="tx_var_unit" />
+                <ScalarProperty Name="tx" ColumnName="tx" />
+                <ScalarProperty Name="tx_state" ColumnName="tx_state" />
+                <ScalarProperty Name="tn_var_desc" ColumnName="tn_var_desc" />
+                <ScalarProperty Name="tn_var_unit" ColumnName="tn_var_unit" />
+                <ScalarProperty Name="tn" ColumnName="tn" />
+                <ScalarProperty Name="tn_state" ColumnName="tn_state" />
+                <ScalarProperty Name="rh_var_desc" ColumnName="rh_var_desc" />
+                <ScalarProperty Name="rh_var_unit" ColumnName="rh_var_unit" />
+                <ScalarProperty Name="rh" ColumnName="rh" />
+                <ScalarProperty Name="rh_state" ColumnName="rh_state" />
+                <ScalarProperty Name="rhavg_var_desc" ColumnName="rhavg_var_desc" />
+                <ScalarProperty Name="rhavg_var_unit" ColumnName="rhavg_var_unit" />
+                <ScalarProperty Name="rhavg" ColumnName="rhavg" />
+                <ScalarProperty Name="rhavg_state" ColumnName="rhavg_state" />
+                <ScalarProperty Name="dd_var_desc" ColumnName="dd_var_desc" />
+                <ScalarProperty Name="dd_var_unit" ColumnName="dd_var_unit" />
+                <ScalarProperty Name="dd_shortText" ColumnName="dd_shortText" />
+                <ScalarProperty Name="dd_icon" ColumnName="dd_icon" />
+                <ScalarProperty Name="dd_state" ColumnName="dd_state" />
+                <ScalarProperty Name="ddavg_var_desc" ColumnName="ddavg_var_desc" />
+                <ScalarProperty Name="ddavg_var_unit" ColumnName="ddavg_var_unit" />
+                <ScalarProperty Name="ddavg_shortText" ColumnName="ddavg_shortText" />
+                <ScalarProperty Name="ddavg_longText" ColumnName="ddavg_longText" />
+                <ScalarProperty Name="ddavg_icon" ColumnName="ddavg_icon" />
+                <ScalarProperty Name="ddavg_state" ColumnName="ddavg_state" />
+                <ScalarProperty Name="ddmax_var_desc" ColumnName="ddmax_var_desc" />
+                <ScalarProperty Name="ddmax_var_unit" ColumnName="ddmax_var_unit" />
+                <ScalarProperty Name="ddmax_shortText" ColumnName="ddmax_shortText" />
+                <ScalarProperty Name="ddmax_icon" ColumnName="ddmax_icon" />
+                <ScalarProperty Name="ddmax_state" ColumnName="ddmax_state" />
+                <ScalarProperty Name="ff_var_desc" ColumnName="ff_var_desc" />
+                <ScalarProperty Name="ff_var_unit" ColumnName="ff_var_unit" />
+                <ScalarProperty Name="ff_val" ColumnName="ff_val" />
+                <ScalarProperty Name="ff_val_kmh" ColumnName="ff_val_kmh" />
+                <ScalarProperty Name="ff_state" ColumnName="ff_state" />
+                <ScalarProperty Name="ffavg_var_desc" ColumnName="ffavg_var_desc" />
+                <ScalarProperty Name="ffavg_var_unit" ColumnName="ffavg_var_unit" />
+                <ScalarProperty Name="ffavg_val" ColumnName="ffavg_val" />
+                <ScalarProperty Name="ffavg_val_kmh" ColumnName="ffavg_val_kmh" />
+                <ScalarProperty Name="ffavg_state" ColumnName="ffavg_state" />
+                <ScalarProperty Name="ffmax_var_desc" ColumnName="ffmax_var_desc" />
+                <ScalarProperty Name="ffmax_var_unit" ColumnName="ffmax_var_unit" />
+                <ScalarProperty Name="ffmax_val" ColumnName="ffmax_val" />
+                <ScalarProperty Name="ffmax_val_kmh" ColumnName="ffmax_val_kmh" />
+                <ScalarProperty Name="ffmax_state" ColumnName="ffmax_state" />
+                <ScalarProperty Name="msl_var_desc" ColumnName="msl_var_desc" />
+                <ScalarProperty Name="msl_var_unit" ColumnName="msl_var_unit" />
+                <ScalarProperty Name="mslavg_var_desc" ColumnName="mslavg_var_desc" />
+                <ScalarProperty Name="mslavg_var_unit" ColumnName="mslavg_var_unit" />
+                <ScalarProperty Name="p_var_desc" ColumnName="p_var_desc" />
+                <ScalarProperty Name="p_var_unit" ColumnName="p_var_unit" />
+                <ScalarProperty Name="pavg_var_desc" ColumnName="pavg_var_desc" />
+                <ScalarProperty Name="pavg_var_unit" ColumnName="pavg_var_unit" />
+                <ScalarProperty Name="rr_var_desc" ColumnName="rr_var_desc" />
+                <ScalarProperty Name="rr_var_unit" ColumnName="rr_var_unit" />
+                <ScalarProperty Name="rr_val" ColumnName="rr_val" />
+                <ScalarProperty Name="rr_state" ColumnName="rr_state" />
+                <ScalarProperty Name="snow_var_desc" ColumnName="snow_var_desc" />
+                <ScalarProperty Name="snow_var_unit" ColumnName="snow_var_unit" />
+                <ScalarProperty Name="tp_12h_acc_var_desc" ColumnName="tp_12h_acc_var_desc" />
+                <ScalarProperty Name="tp_12h_acc_var_unit" ColumnName="tp_12h_acc_var_unit" />
+                <ScalarProperty Name="tp_12h_acc" ColumnName="tp_12h_acc" />
+                <ScalarProperty Name="tp_12h_acc_state" ColumnName="tp_12h_acc_state" />
+                <ScalarProperty Name="tp_24h_acc_var_desc" ColumnName="tp_24h_acc_var_desc" />
+                <ScalarProperty Name="tp_24h_acc_var_unit" ColumnName="tp_24h_acc_var_unit" />
+                <ScalarProperty Name="tp_24h_acc" ColumnName="tp_24h_acc" />
+                <ScalarProperty Name="tp_24h_acc_state" ColumnName="tp_24h_acc_state" />
+                <ScalarProperty Name="tw_var_desc" ColumnName="tw_var_desc" />
+                <ScalarProperty Name="tw_var_unit" ColumnName="tw_var_unit" />
+                <ScalarProperty Name="gSunRad_var_desc" ColumnName="gSunRad_var_desc" />
+                <ScalarProperty Name="gSunRad_var_unit" ColumnName="gSunRad_var_unit" />
+                <ScalarProperty Name="gSunRadavg_var_desc" ColumnName="gSunRadavg_var_desc" />
+                <ScalarProperty Name="gSunRadavg_var_unit" ColumnName="gSunRadavg_var_unit" />
+                <ScalarProperty Name="diffSunRad_var_desc" ColumnName="diffSunRad_var_desc" />
+                <ScalarProperty Name="diffSunRad_var_unit" ColumnName="diffSunRad_var_unit" />
+                <ScalarProperty Name="diffSunRadavg_var_desc" ColumnName="diffSunRadavg_var_desc" />
+                <ScalarProperty Name="diffSunRadavg_var_unit" ColumnName="diffSunRadavg_var_unit" />
+                <ScalarProperty Name="vis_desc" ColumnName="vis_desc" />
+                <ScalarProperty Name="vis_unit" ColumnName="vis_unit" />
+                <ScalarProperty Name="t_5_cm_var_desc" ColumnName="t_5_cm_var_desc" />
+                <ScalarProperty Name="t_5_cm_var_unit" ColumnName="t_5_cm_var_unit" />
+                <ScalarProperty Name="tavg_5_cm_var_desc" ColumnName="tavg_5_cm_var_desc" />
+                <ScalarProperty Name="tavg_5_cm_var_unit" ColumnName="tavg_5_cm_var_unit" />
+                <ScalarProperty Name="tg_5_cm_var_desc" ColumnName="tg_5_cm_var_desc" />
+                <ScalarProperty Name="tg_5_cm_var_unit" ColumnName="tg_5_cm_var_unit" />
+                <ScalarProperty Name="tgavg_5_cm_var_desc" ColumnName="tgavg_5_cm_var_desc" />
+                <ScalarProperty Name="tgavg_5_cm_var_unit" ColumnName="tgavg_5_cm_var_unit" />
+                <ScalarProperty Name="tg_10_cm_var_desc" ColumnName="tg_10_cm_var_desc" />
+                <ScalarProperty Name="tg_10_cm_var_unit" ColumnName="tg_10_cm_var_unit" />
+                <ScalarProperty Name="tgavg_10_cm_var_desc" ColumnName="tgavg_10_cm_var_desc" />
+                <ScalarProperty Name="tgavg_10_cm_var_unit" ColumnName="tgavg_10_cm_var_unit" />
+                <ScalarProperty Name="tg_20_cm_var_desc" ColumnName="tg_20_cm_var_desc" />
+                <ScalarProperty Name="tg_20_cm_var_unit" ColumnName="tg_20_cm_var_unit" />
+                <ScalarProperty Name="tgavg_20_cm_var_desc" ColumnName="tgavg_20_cm_var_desc" />
+                <ScalarProperty Name="tgavg_20_cm_var_unit" ColumnName="tgavg_20_cm_var_unit" />
+                <ScalarProperty Name="tg_30_cm_var_desc" ColumnName="tg_30_cm_var_desc" />
+                <ScalarProperty Name="tg_30_cm_var_unit" ColumnName="tg_30_cm_var_unit" />
+                <ScalarProperty Name="tgavg_30_cm_var_desc" ColumnName="tgavg_30_cm_var_desc" />
+                <ScalarProperty Name="tgavg_30_cm_var_unit" ColumnName="tgavg_30_cm_var_unit" />
+                <ScalarProperty Name="tg_50_cm_var_desc" ColumnName="tg_50_cm_var_desc" />
+                <ScalarProperty Name="tg_50_cm_var_unit" ColumnName="tg_50_cm_var_unit" />
+                <ScalarProperty Name="tgavg_50_cm_var_desc" ColumnName="tgavg_50_cm_var_desc" />
+                <ScalarProperty Name="tgavg_50_cm_var_unit" ColumnName="tgavg_50_cm_var_unit" />
+                <ScalarProperty Name="hhs_var_desc" ColumnName="hhs_var_desc" />
+                <ScalarProperty Name="hhs_var_unit" ColumnName="hhs_var_unit" />
+                <ScalarProperty Name="ns_var_desc" ColumnName="ns_var_desc" />
+                <ScalarProperty Name="ns_var_unit" ColumnName="ns_var_unit" />
+                <ScalarProperty Name="rrHh" ColumnName="rrHh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

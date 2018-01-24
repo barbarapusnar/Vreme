@@ -1085,9 +1085,9 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: white;
+    color: black;
     background-color: white;
-    background-image: url(../Slike/rough_diagonal1.jpg);
+    background-image: url(../Slike/pattern1.jpg);
 }
 input,
 button,
@@ -2323,8 +2323,8 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: rgba(0, 0, 0, 0.55);
-  color: white;
+    background-color: rgba(152, 194, 34, 0.70);
+    color: white;
 }
 table col[class*="col-"] {
   position: static;
@@ -2356,7 +2356,7 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
+  background-color: #e8e8e3;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
@@ -4171,7 +4171,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 80px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4279,7 +4279,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 80px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4298,12 +4298,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-toggle {
-  position: relative;
+  position: center;
   float: right;
   padding: 9px 10px;
-  margin-top: 8px;
+  margin-top: 20px;
   margin-right: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4327,6 +4327,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
+  height:100%;
   margin: 7.5px -15px;
 }
 .navbar-nav > li > a {
@@ -4596,8 +4597,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #111;
-  border-color: #111;
+    background-color: #1B3C8B;
+    border-color: #111;
 }
 .navbar-inverse .navbar-brand {
   color: #111;
@@ -4631,15 +4632,16 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border-color: whitesmoke;
 }
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
-}
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: rgb(152, 194, 34);
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+       background-color: whitesmoke;       
+    }
+
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;

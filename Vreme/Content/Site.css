@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     height: 100vh;
     /*padding-bottom: 20px;*/
 }
@@ -32,12 +32,11 @@ textarea {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: #1B3C8B; /* BlueDark */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 40px;
     transition: 0.5s;
-    
-    
+    border-right: 2px solid #111
 }
 
     /* The navigation menu links */
@@ -48,6 +47,7 @@ textarea {
         display: block;
         transition: 0.5s;
         color:white;
+        
     }
 
         /* When you mouse over the navigation links, change their color */
@@ -85,15 +85,16 @@ textarea {
             font-size: 14px;
         }
 
-}.navbtnstil1 {
-     border: none;
-     background-color:#111;
-     color:white;
-     width:80px;
-     height:40px;
-     vertical-align:middle;
-     font-size: 16px;
- }
+}
+.navbtnstil1 {
+    border: none;
+    background-color: #1B3C8B;
+    color: white;
+    width: 140px;
+    height: 80px;
+    vertical-align: middle;
+    font-size: 22px;
+}
  .navbtnstil1:hover {
      color: Highlight;
  }

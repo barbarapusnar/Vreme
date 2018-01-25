@@ -106,13 +106,3 @@ textarea {
 
 
 }
-
-.navbar-nav li a {
-    line-height: 75px;
-}
-
-@media (max-width: 767px) {
-    .navbar-nav li a {
-        line-height: 20px;
-    }
-}

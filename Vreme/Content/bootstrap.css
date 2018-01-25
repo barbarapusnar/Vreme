@@ -4358,7 +4358,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
-
 }
 @media (min-width: 768px) {
   .navbar-nav {
@@ -4369,7 +4368,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    line-height:35px;
     padding-top: 15px;
     padding-bottom: 15px;
   }

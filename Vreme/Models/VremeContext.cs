@@ -20,7 +20,7 @@ namespace Vreme.Models
         }
 
         public System.Data.Entity.DbSet<Vreme.Models.Podatki> Podatkis { get; set; }
+        
 
-        public System.Data.Entity.DbSet<Vreme.Models.dataMetDatas> dataMetDatas { get; set; }
     }
 }

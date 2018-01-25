@@ -300,7 +300,6 @@
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
@@ -422,7 +421,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ArsoController.cs" />
-    <Compile Include="Controllers\dataMetDatasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PodatkiController.cs" />
     <Compile Include="Global.asax.cs">
@@ -430,33 +428,11 @@
     </Compile>
     <Compile Include="Models\Arso.cs" />
     <Compile Include="Helper.cs" />
-    <Compile Include="Models\ArsoSql.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ArsoSql.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ArsoSql.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ArsoSql.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ArsoSql.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ArsoSql.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\dataMetDatas.cs">
-      <DependentUpon>ArsoSql.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Podatki.cs" />
     <Compile Include="Models\VremeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\BazaIzXMLContext-20180123165700.mdf" />
-    <Content Include="App_Data\BazaIzXMLContext-20180123165700_log.ldf">
-      <DependentUpon>BazaIzXMLContext-20180123165700.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -476,25 +452,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Models\ArsoSql.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ArsoSql.edmx</DependentUpon>
-      <LastGenOutput>ArsoSql.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ArsoSql.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ArsoSql.edmx</DependentUpon>
-      <LastGenOutput>ArsoSql.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\ArsoSql.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ArsoSql.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ArsoSql.edmx.diagram">
-      <DependentUpon>ArsoSql.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -553,22 +512,16 @@
     <Content Include="Views\Arso\Index.cshtml" />
     <Content Include="Views\Shared\_ItaLayout.cshtml" />
     <Content Include="Views\Shared\_EngLayout.cshtml" />
-    <Content Include="Views\dataMetDatas\Create.cshtml" />
-    <Content Include="Views\dataMetDatas\Delete.cshtml" />
-    <Content Include="Views\dataMetDatas\Details.cshtml" />
-    <Content Include="Views\dataMetDatas\Edit.cshtml" />
-    <Content Include="Views\dataMetDatas\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

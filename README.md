@@ -1,3 +1,3 @@
 # Vreme
 
-Testna aplikacija za projekt Cona.
+Testna aplikacija za projekt Cona. Nekaj crasha - nov projekt je ProjektCona1...
